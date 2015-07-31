@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/call_num" android:layout_below="@+id/textView" android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save call number"
+            android:id="@+id/save_call_num" android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/call_num" android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="call"
+            android:id="@+id/call_button" android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/key_num"
+            android:layout_below="@+id/textView2" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="call number"
+            android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="hook key"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/save_call_num" android:layout_alignParentStart="true" android:layout_marginTop="41dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save hook key"
+            android:id="@+id/save_hook_key"
+            android:layout_below="@+id/key_num" android:layout_centerHorizontal="true"/>
+    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggle_hook"
+            android:checked="true"
+            android:layout_below="@+id/textView3" android:layout_alignStart="@+id/toggle_enable"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="フックするキーを変更:"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/save_hook_key" android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="enable call:"
+            android:id="@+id/textView4"
+            android:layout_alignBaseline="@+id/toggle_enable" android:layout_alignBottom="@+id/toggle_enable"
+            android:layout_toStartOf="@+id/call_button"/>
+    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggle_enable"
+            android:layout_above="@+id/call_button" android:layout_toEndOf="@+id/textView4"/>
+</RelativeLayout>
+

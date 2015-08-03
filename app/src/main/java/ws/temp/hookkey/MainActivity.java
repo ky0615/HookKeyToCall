@@ -20,23 +20,17 @@ import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends ActionBarActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
-
-    @ViewById(R.id.call_num)
-    public EditText call_num;
-
-    @ViewById(R.id.key_num)
-    public EditText key_num;
-
-    @ViewById(R.id.toggle_hook)
-    public ToggleButton toggle_hook;
-
-    @ViewById(R.id.toggle_enable)
-    public ToggleButton toggle_enable;
-
     public static final String CALL_NUM = "CALL_NUM";
     public static final String KEY_NUM = "KEY_NUM";
-
+    private static final String TAG = MainActivity.class.getSimpleName();
+    @ViewById(R.id.call_num)
+    public EditText call_num;
+    @ViewById(R.id.key_num)
+    public EditText key_num;
+    @ViewById(R.id.toggle_hook)
+    public ToggleButton toggle_hook;
+    @ViewById(R.id.toggle_enable)
+    public ToggleButton toggle_enable;
     public boolean isEdiable = false;
     public boolean isEnable = true;
 
